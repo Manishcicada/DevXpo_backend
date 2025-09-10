@@ -23,7 +23,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5173",
-        "https://frontend-dev-xpo.vercel.app/"
+        "https://frontend-dev-xpo.vercel.app"
     ],
     allow_methods=["*"],
     allow_headers=["*"],
