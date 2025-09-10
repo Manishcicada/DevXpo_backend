@@ -21,7 +21,10 @@ UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # or your frontend URL
+    allow_origins=[
+        "http://localhost:5173",
+        "https://frontend-dev-xpo.vercel.app/"
+    ],
     allow_methods=["*"],
     allow_headers=["*"],
 )
