@@ -11,3 +11,4 @@ python-dotenv
 aiofiles
 requests
 mangum
+psycopg2-binary==2.9.9
