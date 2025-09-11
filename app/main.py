@@ -8,7 +8,6 @@ import uuid
 import aiofiles
 from dotenv import load_dotenv
 from app import models, services
-from magnum import Magnum
 
 load_dotenv()
 
