@@ -11,7 +11,10 @@ from app import models, services
 
 load_dotenv()
 
-DB_URL = "sqlite:///./data.db"
+DatabaseUrl = os.getenv("DB_URL")
+
+
+DB_URL = DatabaseUrl
 engine = create_engine(DB_URL, echo=False)
 app = FastAPI(title="AI Courtroom MVP")
 
