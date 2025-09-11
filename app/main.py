@@ -253,6 +253,3 @@ def get_transcript(case_id: int):
 def health_check():
     """Health check endpoint"""
     return {"status": "healthy", "service": "AI Courtroom MVP API"}
-
-from mangum import Mangum
-handler = Mangum(app)
