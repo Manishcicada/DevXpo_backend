@@ -8,6 +8,7 @@ import uuid
 import aiofiles
 from dotenv import load_dotenv
 from app import models, services
+from magnum import Magnum
 
 load_dotenv()
 
@@ -253,3 +254,6 @@ def get_transcript(case_id: int):
 def health_check():
     """Health check endpoint"""
     return {"status": "healthy", "service": "AI Courtroom MVP API"}
+
+from mangum import Mangum
+handler = Mangum(app)
